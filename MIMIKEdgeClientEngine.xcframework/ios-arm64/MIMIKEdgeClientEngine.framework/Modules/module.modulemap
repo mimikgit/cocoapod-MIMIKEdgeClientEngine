@@ -1,0 +1,11 @@
+framework module MIMIKEdgeClientEngine {
+  umbrella header "MIMIKEdgeClientEngine.h"
+
+  export *
+  module * { export * }
+}
+
+module MIMIKEdgeClientEngine.Swift {
+    header "MIMIKEdgeClientEngine-Swift.h"
+    requires objc
+}
