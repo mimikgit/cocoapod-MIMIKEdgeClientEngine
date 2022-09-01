@@ -23,7 +23,7 @@ extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
   #endif
 
   final public func stopEdgeEngine()
-  final public func eraseEdgeEngineContentSynchronously() -> Swift.Bool
+  final public func eraseEdgeEngineContent() -> Swift.Bool
   final public func edgeEngineIsRunning() -> Swift.Bool
   final public func currentEdgeEngineStartupParameters() -> MIMIKEdgeClientEngine.MIMIKStartupParameters
 }
