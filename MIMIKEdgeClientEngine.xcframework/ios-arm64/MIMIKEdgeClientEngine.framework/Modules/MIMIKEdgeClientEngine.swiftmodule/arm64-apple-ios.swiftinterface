@@ -10,7 +10,7 @@ import SwiftyJSON
 import UIKit
 import _Concurrency
 @objc final public class MIMIKEdgeClientEdgeEngine : ObjectiveC.NSObject {
-  required public init?(registerAppNotifications: Swift.Bool = false)
+  required public init?(monitorAppStates: Swift.Bool = true)
   @objc deinit
 }
 extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
