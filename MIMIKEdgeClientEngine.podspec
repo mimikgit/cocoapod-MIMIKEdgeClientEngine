@@ -9,11 +9,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "MIMIKEdgeClientEngine"
-  s.version      = "13.6.0"
+  s.version      = "13.6.2"
   s.summary      = "mimik client library"
 
   s.description  = <<-DESC
- MIMIKEdgeClientEngine library can help you interact with the mimik edgeEngine framework.
+ MIMIKEdgeClientEngine library can help you interact with the mimik edgeEngine framework. The actual ARM64 binary of edgeEngine can be found inside the vendored edge.framework.
   DESC
 
   s.homepage     = "https://github.com/mimikgit/cocoapod-MIMIKEdgeClientEngine"
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '~> 5.6.2'
   s.dependency 'SwiftyJSON', '~> 5.0.1'
   s.dependency 'JWTDecode', '~> 3.0.0'
-  s.dependency 'MIMIKEdgeClientCore', '~> 13.6.0'
+  s.dependency 'MIMIKEdgeClientCore', '~> 13.6.2'
 
   s.platform = 'ios', '14.0'
   s.swift_version = '5.5'
