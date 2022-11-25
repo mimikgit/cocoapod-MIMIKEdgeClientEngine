@@ -1,29 +1,30 @@
 # MIMIKEdgeClientEngine
 
- MIMIKEdgeClientEngine library can help you interact with mimik edgeEngine framework with the following APIs:
+MIMIKEdgeClientEngine library can help you interact with mimik edgeEngine framework with the following APIs:
  
  # edgeEngine Services
 
- * `setCustomPortNumber`
  * `startEdgeEngine`
  * `stopEdgeEngine`
- * `eraseEdgeEngineContentSynchronously`
- * `edgeEngineIsRunning`
+ * `eraseEdgeEngineContent`
+ * `edgeEngineIsRunning` 
  * `currentEdgeEngineStartupParameters`
  * `defaultNodeName`
  * `isCurrentNode`
+ * `setCustomPortNumber`
 
- Please see the in-code documentation in Xcode for more details.
-
+Please see the in-code documentation in Xcode for more details.
 
 ## Supported Platforms, Targets
 * `iOS devices running iOS 14+`
 
-Mac Catalyst or iOS simulators are NOT supported
+**Mac Catalyst or iOS simulators are NOT supported**
 
 ## Requirements
 ```
 iOS 14.0+
+iOS Device
+MIMIKEdgeClientCore pod
 ```
 
 ## Installation
@@ -41,7 +42,8 @@ use_frameworks!
 inhibit_all_warnings!
 
 def mimik
-  pod 'MIMIKEdgeClientEngine', '13.6.0'
+  pod 'MIMIKEdgeClientEngine'
+  pod 'MIMIKEdgeClientCore'
 end
 
 target '{target}' do
@@ -60,7 +62,6 @@ post_install do |installer|
 end
 ```
 
-
 ## Tutorial
 
 Visit this [tutorial](https://devdocs.mimik.com/tutorials/03-index) to learn more about the mimik client library and how to integrate it into your iOS project.
@@ -72,6 +73,7 @@ Don't forget to checkout all mimik client and service libraries [available on Gi
 Direct links:
  
  * [MIMIKEdgeClientCore](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientCore)
+ * [MIMIKEdgeClientEngine](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientEngine)
  * [MIMIKEdgeClientUser](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientUser)
  * [MIMIKEdgeClientAssessment](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientAssessment)
  * [MIMIKEdgeClientNotification](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientNotification)
@@ -82,7 +84,7 @@ Direct links:
 
 mimik
 ```
-https://github.com/mimikgit/cocoapod-MIMIKEdgeClientEngine
+https://github.com/mimikgit/cocoapod-MIMIKEdgeClientUser
 ```
 
 ## License

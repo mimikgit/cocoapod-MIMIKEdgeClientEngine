@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6wZLHprKdOLRLtDDEZRV/+ypQeY=
+		vSaLe2SWmSidRDXwxV4jtT6iYcE=
 		</data>
 		<key>Modules/MIMIKEdgeClientEngine.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MIMIKEdgeClientEngine.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YDVTFchAa0goQjHnFwvum3ncSNs=
+		ocxyfUt54OA5nidZza5pqpXH0AA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f114ZQrPECNke3PQglaoDCG2hz1lSZnbem/sqwmVl3w=
+			gIstJqOHfxngkXVmTW9qOwJd64Ukx7z1NljF19B6CcM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
