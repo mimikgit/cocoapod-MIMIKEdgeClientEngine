@@ -6,6 +6,6 @@ framework module MIMIKEdgeClientEngine {
 }
 
 module MIMIKEdgeClientEngine.Swift {
-    header "MIMIKEdgeClientEngine-Swift.h"
-    requires objc
+  header "MIMIKEdgeClientEngine-Swift.h"
+  requires objc
 }

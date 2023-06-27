@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MIMIKEdgeClientEngine
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MIMIKEdgeClientEngine
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Alamofire
 import Foundation
 import MIMIKEdgeClientCore
@@ -9,6 +10,7 @@ import Swift
 import SwiftyJSON
 import UIKit
 import _Concurrency
+import _StringProcessing
 @objc final public class MIMIKEdgeClientEdgeEngine : ObjectiveC.NSObject {
   required public init?(monitorAppStates: Swift.Bool = true)
   @objc deinit
@@ -17,11 +19,9 @@ extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
   public static let kEdgeEngineExpectedVersion: Swift.String
   final public class func edgeEngineExpectedVersion() -> Swift.String
   final public class func setCustomPortNumber(number: Swift.Int32) -> Swift.Bool
-  
   #if compiler(>=5.3) && $AsyncAwait
   final public func startEdgeEngine(startupParameters: MIMIKEdgeClientEngine.MIMIKStartupParameters) async -> Swift.Result<Swift.Bool, Foundation.NSError>
   #endif
-
   final public func stopEdgeEngine()
   final public func eraseEdgeEngineContent() -> Swift.Bool
   final public func edgeEngineIsRunning() -> Swift.Bool
@@ -74,8 +74,8 @@ extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
   @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class MIMIKNode : ObjectiveC.NSObject, Foundation.NSCoding, Swift.Codable {
   public var id: Swift.String?
@@ -95,8 +95,8 @@ extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
   public func defaultNodeName() -> Swift.String
   public func effectiveUrl() -> Foundation.URL?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension MIMIKEdgeClientEngine.MIMIKStartupParameters.LogLevel : Swift.Equatable {}
 extension MIMIKEdgeClientEngine.MIMIKStartupParameters.LogLevel : Swift.Hashable {}

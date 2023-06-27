@@ -9,20 +9,22 @@ MIMIKEdgeClientEngine library can help you interact with mimik edgeEngine framew
  * `eraseEdgeEngineContent`
  * `edgeEngineIsRunning` 
  * `currentEdgeEngineStartupParameters`
- * `defaultNodeName`
+ * `edgeEngineExpectedVersion`
  * `isCurrentNode`
+ * `defaultNodeName`
+ * `effectiveUrl`
  * `setCustomPortNumber`
 
 Please see the in-code documentation in Xcode for more details.
 
 ## Supported Platforms, Targets
-* `iOS devices running iOS 14+`
+* `iOS devices running iOS 15+`
 
 **Mac Catalyst or iOS simulators are NOT supported**
 
 ## Requirements
 ```
-iOS 14.0+
+iOS 15.0+
 iOS Device
 MIMIKEdgeClientCore pod
 ```
@@ -31,10 +33,8 @@ MIMIKEdgeClientCore pod
 
 To install it, simply add the following lines to your Podfile:
 
-For Xcode 13.4.x compatibility
-
 ```swift
-platform :ios, '14.0'
+platform :ios, '15.0'
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/mimikgit/cocoapod-edge-specs.git'
 
@@ -55,7 +55,7 @@ post_install do |installer|
     target.build_configurations.each do |config|
       config.build_settings['ENABLE_BITCODE'] = 'NO'
       config.build_settings['VALID_ARCHS'] = '$(ARCHS_STANDARD_64_BIT)'
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
     end
   end
@@ -75,10 +75,6 @@ Direct links:
  * [MIMIKEdgeClientCore](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientCore)
  * [MIMIKEdgeClientEngine](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientEngine)
  * [MIMIKEdgeClientUser](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientUser)
- * [MIMIKEdgeClientAssessment](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientAssessment)
- * [MIMIKEdgeClientNotification](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientNotification)
- * [MIMIKEdgeClientTracker](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientTracker)
- * [MIMIKEdgeClientContentCache](https://github.com/mimikgit/cocoapod-MIMIKEdgeClientContentCache)
 
 ## Author
 
