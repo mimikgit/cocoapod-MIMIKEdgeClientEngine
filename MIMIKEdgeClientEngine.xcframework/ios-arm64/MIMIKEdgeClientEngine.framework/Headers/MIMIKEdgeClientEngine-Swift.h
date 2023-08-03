@@ -297,6 +297,7 @@ SWIFT_CLASS("_TtC21MIMIKEdgeClientEngine25MIMIKEdgeClientEdgeEngine")
 
 
 
+
 @class NSString;
 @class NSCoder;
 
@@ -315,8 +316,6 @@ SWIFT_CLASS("_TtC21MIMIKEdgeClientEngine9MIMIKNode")
 /// License can be obtain at the mimik developer console (https://developer.mimik.com/console)
 /// \param license edgeEngine license and configuration.
 ///
-/// \param keepAlive The client library automatically shuts down edgeEngine once the application is taken to the background mode (or the device gets locked). If keepAlive is set to true, then the client library will automatically restart the edgeEngine once the application comes back to the foreground. Set keepAlive to false if a manual edgeEngine restart is preferred.
-///
 /// \param logLevel controls the level of console log output from the edgeEngine platform. Defaults to error.
 ///
 /// \param nodeInfoLevel controls the level of node information visible to other nodes on the network. Defaults to off.
@@ -333,6 +332,7 @@ SWIFT_CLASS("_TtC21MIMIKEdgeClientEngine22MIMIKStartupParameters")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 #endif
 #if defined(__cplusplus)

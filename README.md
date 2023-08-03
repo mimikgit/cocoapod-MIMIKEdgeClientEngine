@@ -6,9 +6,10 @@ MIMIKEdgeClientEngine library can help you interact with mimik edgeEngine framew
 
  * `startEdgeEngine`
  * `stopEdgeEngine`
- * `eraseEdgeEngineContent`
+ * `restartEdgeEngine`
+ * `resetEdgeEngine`
  * `edgeEngineIsRunning` 
- * `currentEdgeEngineStartupParameters`
+ * `edgeEngineStartupParameters`
  * `edgeEngineExpectedVersion`
  * `isCurrentNode`
  * `defaultNodeName`

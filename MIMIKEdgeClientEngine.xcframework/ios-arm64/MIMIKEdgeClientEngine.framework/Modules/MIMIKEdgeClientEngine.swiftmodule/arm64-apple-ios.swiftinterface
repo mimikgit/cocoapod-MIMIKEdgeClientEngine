@@ -23,9 +23,16 @@ extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
   final public func startEdgeEngine(startupParameters: MIMIKEdgeClientEngine.MIMIKStartupParameters) async -> Swift.Result<Swift.Bool, Foundation.NSError>
   #endif
   final public func stopEdgeEngine()
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func restartEdgeEngine() async -> Swift.Result<Swift.Bool, Foundation.NSError>
+  #endif
+  final public func resetEdgeEngine() -> Swift.Bool
+  @available(*, deprecated, renamed: "resetEdgeEngine")
   final public func eraseEdgeEngineContent() -> Swift.Bool
   final public func edgeEngineIsRunning() -> Swift.Bool
-  final public func currentEdgeEngineStartupParameters() -> MIMIKEdgeClientEngine.MIMIKStartupParameters
+  final public func edgeEngineStartupParameters() -> MIMIKEdgeClientEngine.MIMIKStartupParameters?
+  @available(*, deprecated, renamed: "edgeEngineStartupParameters")
+  final public func currentEdgeEngineStartupParameters() -> MIMIKEdgeClientEngine.MIMIKStartupParameters?
 }
 @objc public class MIMIKStartupParameters : ObjectiveC.NSObject, Foundation.NSCoding, Swift.Codable {
   public enum LogLevel : Swift.String, Swift.Codable {
