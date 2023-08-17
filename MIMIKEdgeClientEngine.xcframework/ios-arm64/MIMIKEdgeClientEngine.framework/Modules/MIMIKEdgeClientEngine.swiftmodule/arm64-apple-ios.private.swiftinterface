@@ -12,7 +12,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 @objc final public class MIMIKEdgeClientEdgeEngine : ObjectiveC.NSObject {
-  required public init?(monitorAppStates: Swift.Bool = true)
+  required public init?(manageRuntime: Swift.Bool = true)
   @objc deinit
 }
 extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
@@ -33,6 +33,7 @@ extension MIMIKEdgeClientEngine.MIMIKEdgeClientEdgeEngine {
   final public func edgeEngineStartupParameters() -> MIMIKEdgeClientEngine.MIMIKStartupParameters?
   @available(*, deprecated, renamed: "edgeEngineStartupParameters")
   final public func currentEdgeEngineStartupParameters() -> MIMIKEdgeClientEngine.MIMIKStartupParameters?
+  final public func edgeEngineRuntimeIsManaged() -> Swift.Bool
 }
 @objc public class MIMIKStartupParameters : ObjectiveC.NSObject, Foundation.NSCoding, Swift.Codable {
   public enum LogLevel : Swift.String, Swift.Codable {

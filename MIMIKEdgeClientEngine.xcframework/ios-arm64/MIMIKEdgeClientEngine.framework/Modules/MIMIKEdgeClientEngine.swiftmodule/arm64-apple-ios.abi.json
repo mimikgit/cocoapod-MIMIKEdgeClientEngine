@@ -101,7 +101,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(monitorAppStates:)",
+            "printedName": "init(manageRuntime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -126,8 +126,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21MIMIKEdgeClientEngine0ab4EdgeC0C16monitorAppStatesACSgSb_tcfc",
-            "mangledName": "$s21MIMIKEdgeClientEngine0ab4EdgeC0C16monitorAppStatesACSgSb_tcfc",
+            "usr": "s:21MIMIKEdgeClientEngine0ab4EdgeC0C13manageRuntimeACSgSb_tcfc",
+            "mangledName": "$s21MIMIKEdgeClientEngine0ab4EdgeC0C13manageRuntimeACSgSb_tcfc",
             "moduleName": "MIMIKEdgeClientEngine",
             "declAttributes": [
               "Required",
@@ -510,6 +510,30 @@
               "Final",
               "AccessControl",
               "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "edgeEngineRuntimeIsManaged",
+            "printedName": "edgeEngineRuntimeIsManaged()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21MIMIKEdgeClientEngine0ab4EdgeC0C04edgeC16RuntimeIsManagedSbyF",
+            "mangledName": "$s21MIMIKEdgeClientEngine0ab4EdgeC0C04edgeC16RuntimeIsManagedSbyF",
+            "moduleName": "MIMIKEdgeClientEngine",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2415,6 +2439,16 @@
       },
       {
         "kind": "Import",
+        "name": "MIMIKEdgeClientCore",
+        "printedName": "MIMIKEdgeClientCore",
+        "declKind": "Import",
+        "moduleName": "MIMIKEdgeClientEngine",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3905,35 +3939,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Public\/MIMIKEdgeClientEdgeEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 551,
+      "offset": 560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Public\/MIMIKEdgeClientEdgeEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 612,
+      "offset": 621,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Public\/MIMIKEdgeClientEdgeEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1584,
+      "offset": 2369,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Public\/MIMIKEdgeClientEdgeEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1777,
+      "offset": 2565,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Public\/MIMIKEdgeClientEdgeEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 2612,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
@@ -4158,384 +4192,384 @@
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
       "offset": 1842,
-      "length": 82,
-      "value": "\"getMe call error. getStatus must be lying then. attempting to restart edgeEngine\""
+      "length": 52,
+      "value": "\"getMe call error. Attempting to restart edgeEngine\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 1969,
+      "offset": 1939,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 2166,
+      "offset": 2136,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 2175,
+      "offset": 2145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 2267,
+      "offset": 2237,
       "length": 26,
       "value": "\"edgeEngine restart error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 2338,
+      "offset": 2308,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 2492,
+      "offset": 2462,
       "length": 28,
       "value": "\"edgeEngine restart success\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 2535,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 2678,
       "length": 21,
       "value": "\".getMe call success\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 2786,
+      "offset": 2756,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 2877,
+      "offset": 2847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 2911,
+      "offset": 2881,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 3087,
+      "offset": 3057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 3123,
+      "offset": 3093,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 3203,
+      "offset": 3173,
       "length": 28,
       "value": "\"Unable to start edgeEngine\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3246,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 3342,
+      "offset": 3312,
       "length": 28,
       "value": "\"Unable to start edgeEngine\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 3432,
+      "offset": 3402,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 3566,
+      "offset": 3536,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 3697,
       "length": 40,
       "value": "\"edgeEngine startup already in progress\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 3782,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 3853,
+      "offset": 3823,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 3917,
+      "offset": 3887,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 4123,
+      "offset": 4093,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 4208,
+      "offset": 4178,
       "length": 28,
       "value": "\"Unable to establish nodeId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 4327,
+      "offset": 4297,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 4352,
+      "offset": 4322,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 4475,
+      "offset": 4445,
       "length": 36,
       "value": "\"Unable to establish nodeId (empty)\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 4602,
+      "offset": 4572,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 4627,
+      "offset": 4597,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 4957,
+      "offset": 4927,
       "length": 55,
       "value": "\"Unable to establish nodeId edgeEngineWorkingDirectory\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 5103,
+      "offset": 5073,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 5128,
+      "offset": 5098,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 5548,
+      "offset": 5518,
       "length": 74,
       "value": "\"Specified nodeName is an empty string, using default device name instead\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 5686,
+      "offset": 5656,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 5916,
+      "offset": 5886,
       "length": 54,
       "value": "\"Effective startup parameters. \neffective node name:\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 5991,
+      "offset": 5961,
       "length": 33,
       "value": "\"\neffective startup parameters:\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6097,
+      "offset": 6067,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6186,
+      "offset": 6156,
       "length": 30,
       "value": "\"edgeEngine startup requested\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6261,
+      "offset": 6231,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6607,
+      "offset": 6577,
       "length": 20,
       "value": "\"edgeEngine startup\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 6644,
+      "offset": 6614,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6648,
+      "offset": 6618,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6660,
+      "offset": 6630,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "IntegerLiteral",
-      "offset": 6690,
+      "offset": 6660,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 6753,
+      "offset": 6723,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "BooleanLiteral",
-      "offset": 6825,
+      "offset": 6795,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "Dictionary",
-      "offset": 7041,
+      "offset": 7011,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 7141,
+      "offset": 7111,
       "length": 13,
       "value": "\"--log-level\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 7290,
+      "offset": 7260,
       "length": 19,
       "value": "\"--node-info-level\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 7598,
+      "offset": 7568,
       "length": 24,
       "value": "\"--local-discovery-type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 7626,
+      "offset": 7596,
       "length": 5,
       "value": "\"mds\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 7777,
+      "offset": 7747,
       "length": 24,
       "value": "\"--local-discovery-type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 7805,
+      "offset": 7775,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKEdgeClientEdgeEngine+EdgeStart.swift",
       "kind": "StringLiteral",
-      "offset": 8079,
+      "offset": 8049,
       "length": 24,
       "value": "\"--jsonrpc-api-key-file\""
     },
@@ -5530,267 +5564,274 @@
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
       "offset": 4533,
-      "length": 62,
-      "value": "\"Unable to establish the current edgeEngine working directory\""
+      "length": 34,
+      "value": "\"edgeEngineWorkingDirectory Error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 4640,
+      "offset": 4612,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4681,
+      "offset": 4653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 4868,
+      "offset": 4840,
       "length": 38,
       "value": "\"edgeEngine working directory removed\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 4951,
+      "offset": 4923,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4992,
+      "offset": 4964,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 5087,
+      "offset": 5059,
       "length": 45,
       "value": "\"Error removing edgeEngine working directory\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 5177,
+      "offset": 5149,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5218,
+      "offset": 5190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 5461,
-      "length": 54,
-      "value": "\"Unable to establish edgeEngineShouldKeepAliveFileUrl\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5560,
-      "length": 20,
-      "value": "\"⚠️⚠️⚠️\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5703,
-      "length": 78,
-      "value": "\"Client library will attempt to keep edgeEngine service running automatically\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5826,
-      "length": 20,
-      "value": "\"⚠️⚠️⚠️\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6040,
-      "length": 71,
-      "value": "\"Client library will NOT keep edgeEngine service running automatically\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6156,
-      "length": 20,
-      "value": "\"⚠️⚠️⚠️\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6501,
-      "length": 54,
-      "value": "\"Unable to establish edgeEngineShouldKeepAliveFileUrl\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6600,
-      "length": 20,
-      "value": "\"⚠️⚠️⚠️\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6641,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6993,
-      "length": 48,
-      "value": "\"Unable to establish edgeEngineWorkingDirectory\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7086,
-      "length": 20,
-      "value": "\"⚠️⚠️⚠️\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7202,
-      "length": 34,
-      "value": "\"\/.edgeEngineShouldKeepAlive.lock\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7598,
+      "offset": 5487,
       "length": 46,
       "value": "\"Unable to establish jsonRpcApiKeyLockFileUrl\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 7689,
+      "offset": 5578,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 8234,
-      "length": 48,
-      "value": "\"Unable to establish edgeEngineWorkingDirectory\""
+      "offset": 6123,
+      "length": 34,
+      "value": "\"edgeEngineWorkingDirectory Error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 8327,
+      "offset": 6202,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 8443,
+      "offset": 6318,
       "length": 22,
       "value": "\"\/.jsonRpcApiKey.lock\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 8804,
+      "offset": 6679,
       "length": 36,
       "value": "\"Error locking a new jsonRpcApiKey:\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 8900,
+      "offset": 6775,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9045,
+      "offset": 6920,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 9153,
+      "offset": 7028,
       "length": 30,
       "value": "\"Locking a new jsonRpcApiKey:\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 9276,
+      "offset": 7151,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 9408,
+      "offset": 7283,
       "length": 36,
       "value": "\"Error locking a new jsonRpcApiKey:\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 9504,
+      "offset": 7379,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 9785,
+      "offset": 7660,
       "length": 8,
       "value": "\"(path)\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 9838,
+      "offset": 7713,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 10141,
+      "offset": 8016,
       "length": 9,
       "value": "\"(value)\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 10195,
+      "offset": 8070,
       "length": 20,
       "value": "\"⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager.swift",
       "kind": "StringLiteral",
-      "offset": 10698,
+      "offset": 8573,
       "length": 15,
       "value": "\".edge-service\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 431,
+      "length": 34,
+      "value": "\"shouldManageRuntimeFileUrl Error\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 20,
+      "value": "\"⚠️⚠️⚠️\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 653,
+      "length": 140,
+      "value": "\"mimik Client Library Engine component will manage edgeEngine Runtime lifecycle automatically, based on application lifecycle notifications\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 20,
+      "value": "\"⚠️⚠️⚠️\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 1045,
+      "length": 81,
+      "value": "\"mimik Client Library Engine component won't manage edgeEngine Runtime lifecycle\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 1171,
+      "length": 20,
+      "value": "\"⚠️⚠️⚠️\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 1498,
+      "length": 34,
+      "value": "\"shouldManageRuntimeFileUrl Error\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 1577,
+      "length": 20,
+      "value": "\"⚠️⚠️⚠️\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1618,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 1949,
+      "length": 34,
+      "value": "\"edgeEngineWorkingDirectory Error\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 2028,
+      "length": 20,
+      "value": "\"⚠️⚠️⚠️\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 2110,
+      "length": 34,
+      "value": "\"\/.edgeEngineShouldKeepAlive.lock\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Internal\/MIMIKPortManager+ManageRuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 2244,
+      "length": 38,
+      "value": "\"\/.edgeEngineShouldManageRuntime.lock\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/MIMIKEdgeClientEngine\/Public\/MIMIKNode.swift",
