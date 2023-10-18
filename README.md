@@ -1,3 +1,7 @@
+# PLEASE NOTE THIS MIMIK EDGEENGINE CLIENT LIBRARY IS NO LONGER BEING MAINTENAINED
+# THE NEXT GENERATION CLIENT LIBRARY IS AVAILABLE HERE: https://github.com/mimikgit/cocoapod-EdgeEngine
+
+#
 # MIMIKEdgeClientEngine
 
 MIMIKEdgeClientEngine library can help you interact with mimik edgeEngine framework with the following APIs:
